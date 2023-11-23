@@ -34,7 +34,7 @@
 	Write-Output '*****Git fetch origin****'
 	git fetch $sourceURL
 	Write-Output '*****Git push secondary****'
-	git push all branch1
+	git push secondary --all
 	Write-Output '**Azure Devops repo synced with Github repo**'
 	Set-Location $stageDir
 	if((Test-Path -path $githubDir))
